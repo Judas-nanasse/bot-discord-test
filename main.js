@@ -25,7 +25,15 @@ client.on('messageCreate', async message => {
     }else if (message.content.toLowerCase().includes('pourquoi')) {
       message.reply("parce que feur mon gars !")
     }else if (message.content.toLowerCase().includes('quoi') ) {
-    message.reply('https://tenor.com/view/feur-th%C3%A9obabac-not-funny-gif-22130648')
+      let randomquoi = Math.floor(Math.random() * 250)
+      switch (randomquoi) {
+        default:
+          message.reply('https://tenor.com/view/feur-th%C3%A9obabac-not-funny-gif-22130648')
+          break
+          case 1:
+            message.reply("coubec")
+            break
+      }
   } else if (message.author.username == "Moa" && message.content.toLowerCase().includes('mark ratio') ) {
     message.channel.messages.fetch({ limit: 100 }).then(messages => {
       let mention = message.mentions.users.first();
@@ -48,7 +56,7 @@ client.on('messageCreate', async message => {
       
   }).catch(console.error);
   }else if (message.author.username != "Mark Zuckerberg") {
-    let random = Math.floor(Math.random() * 250)
+    let random = Math.floor(Math.random() * 300)
     switch (random) {
       case 0 :
         message.react('🇷');
@@ -116,6 +124,17 @@ client.on('messageCreate', async message => {
       case 16:
           (await message.author.createDM()).send("t'est trop bonne \ntu m'exite\nj'ai vraiment envie de te baiser la\neuh j'ai les couilles qui sentent hyper fort le sperme la putain\nj'ai la bite en feu\ntu sais que je suis entrain de me branler la encore\ntu me fais bander fort tu va me faire ejaculer encore\nSUCE MOI PAR PITIER")
       break
+      case 17:
+        message.channel.send("negro")
+        break
+      case 18:
+        message.channel.send("tkt je serai la pour la réu avec les illuminati")
+        message.channel.send("ha deso je me suis trompé de serv")
+        break
+      case 19:
+        message.channel.send("putain je viens de réecouter du MJ en vrai c'était a chier comment il a fais pour être connue ce bouffon")
+        message.channel.send("en plus c'est un pedo")
+        break
     }
       
 
