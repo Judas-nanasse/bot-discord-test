@@ -1,10 +1,11 @@
-const {Client , GatewayIntentBits , } = require('discord.js')
+const {Client , GatewayIntentBits, bold, italic, underscore, strikethrough, blockQuote, spoiler , } = require('discord.js')
 require("dotenv/config")
 const client = new Client({
     intents:  [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMembers
     ]
 })
 
@@ -31,10 +32,10 @@ client.on('messageCreate', async message => {
           message.reply('https://tenor.com/view/feur-th%C3%A9obabac-not-funny-gif-22130648')
           break
           case 1:
-            message.reply("coubec")
+            message.reply("quoicoubeh")
             break
       }
-  } else if (message.author.username == "Moa" && message.content.toLowerCase().includes('mark ratio') ) {
+  } else if (message.author.id == "261540167406321666" && message.content.toLowerCase().includes('mark ratio') ) {
     message.channel.messages.fetch({ limit: 100 }).then(messages => {
       let mention = message.mentions.users.first();
       const lastUserMessages = messages.filter(v =>  v.author.id === mention.id);
@@ -56,7 +57,7 @@ client.on('messageCreate', async message => {
       
   }).catch(console.error);
   }else if (message.author.username != "Mark Zuckerberg") {
-    let random = Math.floor(Math.random() * 300)
+    let random = Math.floor(Math.random() * 600)
     switch (random) {
       case 0 :
         message.react('🇷');
@@ -133,8 +134,45 @@ client.on('messageCreate', async message => {
         break
       case 19:
         message.channel.send("putain je viens de réecouter du MJ en vrai c'était a chier comment il a fais pour être connue ce bouffon")
-        message.channel.send("en plus c'est un pedo")
+         message.channel.send("en plus c'est un pedo")
         break
+      case 20:
+          message.channel.send(blockQuote(strikethrough(underscore(bold(italic("oua les gars je suis bourré ou what la wtf ooooooooooooooooooo")))))  )
+        break
+      case 21:
+        message.channel.send(spoiler("bakugo il meurt dans mha"))
+        break
+      case 22:
+        message.channel.send("Vml2ZSBsZXMgcGluZ291aW4=")
+        break
+      case 23:
+        message.reply(message.content.length.toString())
+        break   
+      case 24:
+        message.member.roles.add("1085208112715284582")
+        break     
+      case 25:
+        if (message.author.id != "261540167406321666") {
+          message.member.setNickname("nulossman en personne")
+        }
+        break
+      case 26:
+        if (message.author.id != "261540167406321666") {
+        message.member.timeout(1*60*1000 , "cheh")
+        }
+        break
+      case 27:
+        message.reply("c'est fou comment je m'en branle")
+        break
+      case 28:
+        message.channel.send("merci pour ce doujin de fou j'ai adorer la partie avec le rape loli fury tentacules aliens c'était ma meilleure branlette")
+        message.channel.send("aaaaa mauvais destinataire faite pas attention")
+        break
+      case 29:
+        (await message.author.createDM()).send("hentai loli fury crossdressing rape gore")
+        message.member.send("oups pardon j'avais pas vu que j'étais sur discord je fesait des recherche pour le travail fais pas attention")
+        break
+      
     }
       
 
