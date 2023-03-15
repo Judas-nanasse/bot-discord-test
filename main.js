@@ -25,6 +25,8 @@ client.on('messageCreate', async message => {
       message.reply("c'est pour feur je crois.")
     }else if (message.content.toLowerCase().includes('pourquoi')) {
       message.reply("parce que feur mon gars !")
+    }else if (message.content.toLowerCase().includes('merci mark')) {
+      message.reply("de rien mon gars !")
     }else if (message.content.toLowerCase().includes('quoi') ) {
       let randomquoi = Math.floor(Math.random() * 250)
       switch (randomquoi) {
@@ -57,7 +59,7 @@ client.on('messageCreate', async message => {
       
   }).catch(console.error);
   }else if (message.author.username != "Mark Zuckerberg") {
-    let random = Math.floor(Math.random() * 600)
+    let random = Math.floor(Math.random() * 1000)
     switch (random) {
       case 0 :
         message.react('🇷');
@@ -165,12 +167,12 @@ client.on('messageCreate', async message => {
         message.reply("c'est fou comment je m'en branle")
         break
       case 28:
-        message.channel.send("merci pour ce doujin de fou j'ai adorer la partie avec le rape loli fury tentacules aliens c'était ma meilleure branlette")
-        message.channel.send("aaaaa mauvais destinataire faite pas attention")
+        message.channel.send("hentai loli fury crossdressing rape gore")
+        message.channel.send("oups pardon j'avais pas vu que j'étais sur discord je fesait des recherche pour le travail faite pas attention")
         break
       case 29:
-        (await message.author.createDM()).send("hentai loli fury crossdressing rape gore")
-        message.member.send("oups pardon j'avais pas vu que j'étais sur discord je fesait des recherche pour le travail fais pas attention")
+        (await message.author.createDM()).send("merci pour ce doujin de fou j'ai adorer la partie avec le rape loli fury tentacules aliens c'était ma meilleure branlette")
+        message.member.send("aaaaa mauvais destinataire fait pas attention")
         break
       
     }
