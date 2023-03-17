@@ -59,7 +59,7 @@ client.on('messageCreate', async message => {
       
   }).catch(console.error);
   }else if (message.author.username != "Mark Zuckerberg") {
-    let random = Math.floor(Math.random() * 1000)
+    let random = Math.floor(Math.random() * 1100)
     switch (random) {
       case 0 :
         message.react('🇷');
@@ -174,7 +174,24 @@ client.on('messageCreate', async message => {
         (await message.author.createDM()).send("merci pour ce doujin de fou j'ai adorer la partie avec le rape loli fury tentacules aliens c'était ma meilleure branlette")
         message.member.send("aaaaa mauvais destinataire fait pas attention")
         break
-      
+      case 30:
+        message.react('🐧')
+        break
+      case 31:
+        message.channel.send("ce chien d'Elon Musk a baisé ma femme je vais l'enculer si je le croise ce fdp")
+        break
+      case 32:
+        message.channel.send(spoiler("a la fin de la musique il est beau le lavabo il dit il est laid le bidet"))
+        break
+      case 33:
+        message.channel.send(spoiler("zoro est vraiment raciste"))
+        break
+      case 34:
+        if (message.author.id != "261540167406321666") {
+        message.member.setNickname("🐧" + message.author.username  + "🐧")
+        }
+        break
+
     }
       
 
